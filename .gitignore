@@ -1,0 +1,10 @@
+*.log
+
+# "sub-repos"
+ui/
+frontend/
+desktop/
+mobile/
+backend/
+deployment/
+

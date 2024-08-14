@@ -25,6 +25,7 @@ go run ./cmd/update
 ## Commands
 
 - `go run ./cmd/setup` - sets up dependencies/prereqs for all the repositories.
+- `go run ./cmd/update` - pulls and updates submodules for all repositories, also reruns `pnpm install` in each node.js repo.
 - `mprocs -c ./cmd/dev_vcs.yaml` - runs a development environment.
 
 ## Why manually clone all the repositories with a script instead of using submodules?

@@ -17,6 +17,9 @@
 ```sh
 go run ./cmd/setup
 mprocs -c ./cmd/dev_vcs.yaml
+
+# when you want to update
+go run ./cmd/update
 ```
 
 ## Commands

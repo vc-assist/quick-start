@@ -1,6 +1,6 @@
 # Quick start
 
-> This repository is meant as a quick start for having a working development copy of VC Assist.
+> This repository makes it easy to get up and running with a local copy of VC Assist.
 
 > [!NOTE]
 > It is NOT recommended to try and make this a starting point for your *understanding* of the VC Assist codebase, instead take your time going through an individual repo, running/testing it individually, and then come back to this repository.
@@ -26,7 +26,7 @@ go run ./cmd/update
 
 - `go run ./cmd/setup` - sets up dependencies/prereqs for all the repositories.
 - `go run ./cmd/update` - pulls and updates submodules for all repositories, also reruns `pnpm install` in each node.js repo.
-- `mprocs -c ./cmd/dev_vcs.yaml` - runs a development environment.
+- `mprocs -c ./mprocs/dev_vcs.yaml` - runs a development environment.
 
 ## Why manually clone all the repositories with a script instead of using submodules?
 

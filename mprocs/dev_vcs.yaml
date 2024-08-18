@@ -1,0 +1,31 @@
+procs:
+  frontend:
+    cwd: "frontend"
+    shell: "pnpm dev"
+  desktop:
+    cwd: "desktop"
+    shell: "pnpm start --dev"
+  backend_devenv:
+    cwd: "backend"
+    shell: "go run ./dev"
+  backend_auth:
+    cwd: "backend/cmd/auth"
+    shell: "go run ."
+  backend_keychain:
+    cwd: "backend/cmd/keychain"
+    shell: "go run ."
+  backend_linker:
+    cwd: "backend/cmd/linker"
+    shell: "go run ."
+  backend_gradesnapshots:
+    cwd: "backend/cmd/gradesnapshots"
+    shell: "go run ."
+  backend_powerservice:
+    cwd: "backend/cmd/powerservice"
+    shell: "go run ."
+  backend_vcsmoodle:
+    cwd: "backend/cmd/vcsmoodle"
+    shell: "go run ."
+  backend_vcs:
+    cwd: "backend/cmd/vcs"
+    shell: "go run ."

@@ -4,10 +4,10 @@ procs:
     shell: "pnpm dev"
   desktop:
     cwd: "desktop"
-    shell: "pnpm start --dev"
+    shell: "pnpm dev"
   backend:
     cwd: "backend/cmd/vc-server"
     shell: "go run . -v"
-  backend_devenv:
+  docker_services:
     cwd: "backend"
     shell: "go run ./dev"

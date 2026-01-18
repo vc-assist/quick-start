@@ -58,4 +58,5 @@ func main() {
 	installNodeModules("./desktop")
 	installNodeModules("./desktop/frontend")
 	installNodeModules("./ui")
+	installNodeModules("./frontend/ui")
 }

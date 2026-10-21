@@ -1,0 +1,26 @@
+name: Go security checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      GOMAXPROCS: '2'
+      GOFLAGS: -p=2
+      GOTOOLCHAIN: local
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-go@v7
+        with:
+          go-version-file: go.mod
+          cache: false
+      - run: go build ./...
+      - run: go vet ./...
+      - run: go test ./...

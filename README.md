@@ -2,13 +2,15 @@
 
 > This repository makes it easy to get up and running with a local copy of VC Assist.
 
+Requires Go 1.27.3 or later, including the eMudhra certificate distrust fix.
+
 > [!NOTE]
 > It is NOT recommended to try and make this a starting point for your *understanding* of the VC Assist codebase, instead take your time going through an individual repo, running/testing it individually, and then come back to this repository.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/en)
-- [Golang](https://go.dev/)
+- [Node.js](https://nodejs.org/en) 22.23.4+, 24.22.1+, or 26.12.1+ from a supported release line
+- [Golang](https://go.dev/) 1.27.3+
 - `pnpm add -g mprocs`
 - An email account and app password provided to `backend/cmd/auth/config.json5`.
 
